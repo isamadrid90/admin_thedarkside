@@ -1,0 +1,10 @@
+<div class="jumbotron text-center">
+    <h1>Select a ship</h1>
+</div>
+<div ng-repeat="ship in ships">
+
+    <div ng-click="shipDetails(ship.id)">
+        <span>{{ ship.name }}</span>
+        <img ng-src="{{ship.image}}">
+    </div>
+</div>
